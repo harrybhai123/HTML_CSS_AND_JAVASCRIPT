@@ -1,12 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>This is start</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+  </head>
+  <body>
+    <!-- Div Section -->
+
+    <div>Block Element</div>
+
+    <!-- Heading Section -->
+    <h1>Heading - 1</h1>
+    <h2>Heading - 2</h2>
+    <h3>Heading - 3</h3>
+    <h4>Heading - 4</h4>
+    <h5>Heading - 5</h5>
+    <h6>Heading - 6</h6>
+
+    <!-- Paragraph -->
+    <p>This is paragraph</p>
+
+    <br />
+
+    <!-- image section -->
+    <img
+      src="https://i.pinimg.com/736x/de/59/4e/de594ec09881da3fa66d98384a3c72ff.jpg"
+      alt="404 image not found"
+    />
+
+    <!-- Outbound Links -->
+    <a href="https://www.google.com/" target="_blank"
+      >click here to redirect Google website</a
+    >
+
+    <br />
+
+    <!-- Mail to link -->
+    <a href="mailto:me@example.com?Subject=Hi%20dear" target="_top"
+      >Send Mail</a
+    >
+
+    <br />
+
+    <!-- Inner anchor (jump on page) -->
+    <a href="#footer">Jump to footnote</a>
+    <br />
+    <a name="footer"></a>Footnote content
+
+    <br />
+
+    <!-- Bold text -->
+    <strong>Bold text</strong>
+
+    <br />
+
+    <!-- Italic text -->
+    <em>Italic text</em>
+
+    <br />
+
+    <!-- Underlined text -->
+    <span style="text-decoration: underline">Underlined text</span>
+
+    <br />
+
+    <!-- Iframe -->
+    <iframe src="link.html" width="200" height="200"> </iframe>
+
+    <br />
+
+    <!-- Abbreviation -->
+    <abbr title="Hypertext Markup Language">HTML</abbr>
+
+    <br />
+
+    <!-- Comment -->
+    <!-- HTML
+Comment -->
+
+    <br />
+
+    <!-- Horizontal Line -->
+    <hr />
+
+    <br />
+
+    <!-- Line break -->
+    <br />
+
+    <br />
+
+    <!-- Quotation -->
+    <q>Success is a journey not a destination.</q>
+    <blockquote cite="https://www.google.com/">
+      “Some say Google is God. Others say Google is Satan. But if they think
+      Google is too powerful, remember that with search engines unlike other
+      companies, all it takes is a single click to go to another search engine.”
+    </blockquote>
+
+    <br />
+
+    <!-- Video -->
+    <video width="200" height="150" autoplay loop muted controls>
+      <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4" />
+    </video>
+
+    <br />
+
+    <!-- Audio -->
+    <audio controls>
+      <source src="https://www.w3schools.com/tags/horse.ogg" type="audio/ogg" />
+    </audio>
+
+    <br />
+    <!-- HTML5 Page Structure header, nav, main, article, section, aside, footer,
+    address -->
+    <header>
+      <div id="logo">HTML</div>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="link.html">Page</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main role="main">
+      <article>
+        <h2>Title 1</h2>
+        <p>Content 1</p>
+      </article>
+      <article>
+        <h2>Title 2</h2>
+        <p>Content 2</p>
+      </article>
+    </main>
+    <section>A group of related content</section>
+    <aside>Sidebar</aside>
+    <footer>
+      <p>&copy; HTML CheatSheet</p>
+      <address>Contact <a href="mailto:me@example.com">me</a></address>
+    </footer>
+
+    <br />
+    <!-- Structures Table -->
+    <table>
+      <caption>
+        Phone numbers
+      </caption>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th colspan="2">Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>577854</td>
+          <td>577855</td>
+        </tr>
+        <tr>
+          <td>Jack</td>
+          <td>577856</td>
+          <td>577857</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>&nbsp;</td>
+          <td>Personal</td>
+          <td>Office</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <br />
+    <!-- Unordered list -->
+    <ul>
+      <li>First</li>
+      <li>Second</li>
+      <li>Third</li>
+    </ul>
+
+    <br />
+    <!-- Definition list -->
+    <dl>
+      <dt>HTML</dt>
+      <dd>Hypertext Markup Language</dd>
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheets</dd>
+    </dl>
+
+    <br />
+    <!-- Form -->
+    <form action="/action.php" method="post">
+      Name: <input name="name" type="text" /> <br />
+      Age:
+      <input max="99" min="1" name="age" step="1" type="number" value="18" />
+      <br />
+      <select name="gender">
+        <option selected="selected" value="male">Male</option>
+        <option value="female">Female</option></select
+      ><br />
+      <input checked="checked" name="newsletter" type="radio" value="daily" />
+      Daily <input name="newsletter" type="radio" value="weekly" /> Weekly<br />
+      <textarea cols="20" name="comments" rows="5">Comment</textarea><br />
+      <label
+        ><input name="terms" type="checkbox" value="tandc" />Accept terms</label
+      >
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <br />
+    <!-- Charactors -->
+    😍 😂 😎 😘 🙂 ❤ 🔥 👍 💏 🌼 🌈 ⚡ ☃ 🍩 🍷 🚕 ⚠ 💋 ✔ ❌ " & / < > ‚ „ † ‡ ‰
+    ‹ ‘ ’ “ ” ™ › ¡ ¢ £ ¤ ¥ ¦ § ¨ © ª « ¬ ­ ® ¯ ° ± ² ³ ´ µ ¶ · ¸ ¹ º » ¼ ½ ¾ ¿
+    À Á Â Ã Ä Å Æ Ç È É Ê Ë Ì Í Î Ï Ð Ñ Ò Ó Ô Õ Ö × Ø Ù Ú Û Ü Ý Þ ß à á â ã ä å
+    æ ç è é ê ë ì í î ï ð ñ ò ó ô õ ö ÷ ø ù ú û ü ý þ ÿ ƒ Α Β Γ Δ Ε Ζ Η Θ Ι Κ Λ
+    Μ Ν Ξ Ο Π Ρ Σ Τ Υ Φ Χ Ψ Ω α β γ δ ε ζ η θ ι κ λ μ ν ξ ο π ρ ς σ τ υ φ χ ψ ω
+    ϑ ϒ ϖ • … ′ ″ ‾ ℑ ℘ ℜ ℵ ← ↑ → ↓ ↔ ↵ ⇐ ⇑ ⇒ ⇓ ⇔ ∀ ∂ ∃ ∅ ∇ ∈ ∉ ∋ ∏ ∑ − ∗ √ ∝ ∞
+    ∠ ∧ ∨ ∩ ∪ ∫ ∴ ∼ ≅ ≈ ≠ ≡ ≤ ≥ ⊂ ⊃ ⊄ ⊆ ⊇ ⊕ ⊗ ⊥ ⋅ ⌈ ⌉ ⌊ ⌋ 〈 〉 ◊ ♠ ♣ ♥ ♦
+
+    <br />
+    <!-- Attributes  -->
+    <!-- SYNTAX  -->
+    <tag attributename="value" />
+    - lowecase attributes, quote values
+
+    <br />
+    <!-- Global attributes -->
+    <!-- accesskey, class,
+    contenteditable, data-*, dir, draggable, hidden, id, lang, spellcheck,
+    style, tabindex, title -->
+    <div
+      id="demo"
+      class="big"
+      dir="ltr"
+      lang="en"
+      style="color: red"
+      tabindex="0"
+      title="Tooltip"
+      contenteditable="true"
+      spellcheck="true"
+      data-htmlcheat="99"
+    >
+      Hello World!
+    </div>
+
+    <br />
+    <!-- Internationalization: dir, lang, xml:lang -->
+    <html lang="en-US">
+      ...
+      <p dir="rtl">Right to left (Arabic)</p>
+      ...
+    </html>
+
+    <br />
+    <!-- Link: download, href, hreflang, media, rel, target, type -->
+    <a
+      href="https://www.google.com/"
+      target="_blank"
+      rel="external"
+      hreflang="en"
+      type="text/html"
+    >
+      Link
+    </a>
+
+    <br />
+    <!-- Image: src, alt, height, ismap, longdesc, src, srcset, usemap, width -->
+    <img
+      src="https://i.pinimg.com/736x/de/59/4e/de594ec09881da3fa66d98384a3c72ff.jpg"
+      alt="description"
+      height="48"
+      width="100"
+      longdesc="desc.txt"
+    />
+
+    <br />
+
+    <br />
+    <!-- Blank Page -->
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <title>Page Title</title>
+        <meta name="description" content="Roughly 155 characters" />
+        <link rel="stylesheet" type="text/css" href="mystyle.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+      </head>
+      <body>
+        <!-- Content -->
+      </body>
+    </html>
+
+    <br />
+  </body>
 </html>
+
+<link rel="stylesheet" href="style.css" />
